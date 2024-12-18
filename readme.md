@@ -1,6 +1,20 @@
 <br />
 <img src="assets/images/logo-transparent.png" width="80"/>
 
+### Bruno - Building and running the app from source code.
+```
+# run following command to build and run the web server.
+nvm use 22.11.0
+npm install --legacy-peer-deps
+npm run build:graphql-docs
+npm run build:bruno-query
+npm run build:bruno-common
+npm run sandbox:bundle-libraries --workspace=packages/bruno-js
+npm run dev:web
+# in different terminal run following command to start the app
+npm run dev:electron
+```
+
 ### Bruno - Opensource IDE for exploring and testing APIs.
 
 [![GitHub version](https://badge.fury.io/gh/usebruno%2Fbruno.svg)](https://badge.fury.io/gh/usebruno%bruno)
